@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "esp32_test"
+		},
+		{
+			"path": "../thuchanhWeb"
+		}
+	],
+	"settings": {}
+}

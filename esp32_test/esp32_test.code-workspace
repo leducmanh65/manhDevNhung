@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "esp32_test",
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.quickSuggestions": {
+			"other": false,
+			"comments": false,
+			"strings": false
+		},
+		"editor.inlineSuggest.enabled": false,
+		"editor.suggestOnTriggerCharacters": false,
+		"editor.suggest.showWords": false,
+		"editor.parameterHints.enabled": false,
+		"editor.wordBasedSuggestions": "off",
+		"editor.suggest.showSnippets": false,
+		"editor.suggest.showFunctions": false,
+		"editor.suggest.showMethods": false,
+		"editor.suggest.showVariables": false,
+		"editor.suggest.showKeywords": false,
+		// Disable GitHub Copilot inline suggestions if the extension is installed
+		"github.copilot.inlineSuggest.disable": true
+	}
+}
