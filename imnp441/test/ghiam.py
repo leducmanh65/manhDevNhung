@@ -22,8 +22,8 @@ try:
         if data:
             wav.writeframes(data)
 except KeyboardInterrupt:
-    print("\n Dừng ghi âm.")
+    print("Dừng ghi âm.")
 finally:
     wav.close()
     ser.close()
-    print("file lưu")
+    print("lưu")

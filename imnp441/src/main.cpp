@@ -15,7 +15,7 @@ Adafruit_NeoPixel pixel(NUM_PIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 void setup() {
   Serial.begin(115200);
   delay(1000);
-  Serial.println("🔊 ESP32-S3 + INMP441 bắt đầu...");
+  Serial.println("bat dau. imnp ss");
 
   pixel.begin();
   pixel.clear();
@@ -46,7 +46,7 @@ void setup() {
   i2s_set_pin(I2S_NUM_0, &pin_config);
   i2s_start(I2S_NUM_0);
 
-  Serial.println("✅ Sẵn sàng thu âm...");
+  Serial.println("cbi thu âm");
 }
 
 void loop() {
@@ -67,15 +67,12 @@ void loop() {
   int avg = sum / num_samples;
   Serial.println(avg);
 
-  // LED báo âm thanh
   if (avg > 100) {
-    pixel.setPixelColor(0, pixel.Color(0, 255, 0)); // xanh
+    pixel.setPixelColor(0, pixel.Color(0, 255, 0));
     pixel.show();
   } else {
     pixel.clear();
     pixel.show();
-  }
-
-  // Gửi dữ liệu PCM sang máy tính (ghi file .wav)
+  
   Serial.write((uint8_t *)pcm, num_samples * 2);
 }
