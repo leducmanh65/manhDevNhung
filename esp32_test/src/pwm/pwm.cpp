@@ -1,4 +1,4 @@
-// trong bài này em dùng pwm để điều chỉnh độ sáng của led
+// trong bài này em dùng pwm để điều chỉnh độ sáng của led//
 
 #include <Arduino.h>
 #define LED 16
